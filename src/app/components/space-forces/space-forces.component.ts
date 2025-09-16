@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PdfItem, PdfTableComponent } from '../../shared/ui/pdf-table/pdf-table';
+import { ScrollUp } from "../../shared/ui/scroll-up/scroll-up";
 
 @Component({
   selector: 'app-space-forces',
-  imports: [PdfTableComponent],
+  imports: [PdfTableComponent, ScrollUp],
   templateUrl: './space-forces.component.html',
   styleUrl: './space-forces.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

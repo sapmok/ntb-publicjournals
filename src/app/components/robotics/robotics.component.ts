@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PdfItem, PdfTableComponent } from '../../shared/ui/pdf-table/pdf-table';
+import { ScrollUp } from "../../shared/ui/scroll-up/scroll-up";
 
 @Component({
   selector: 'app-robotics',
-  imports: [PdfTableComponent],
+  imports: [PdfTableComponent, ScrollUp],
   templateUrl: './robotics.component.html',
   styleUrl: './robotics.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

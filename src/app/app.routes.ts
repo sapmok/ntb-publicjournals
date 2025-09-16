@@ -62,7 +62,14 @@ export const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'robotics-analitics',
+        redirectTo: 'mechanical-analitics',
+      },
+      {
+        path: 'mechanical-analitics',
+        loadComponent: () =>
+          import('./components/analytics-mechanical/analytics-mechanical').then(
+            (m) => m.AnalyticsMechanicalComponent,
+          ),
       },
       {
         path: 'robotics-analitics',
@@ -102,8 +109,8 @@ export const routes: Routes = [
       {
         path: 'ground-troops',
         loadComponent: () =>
-          import('./components/ground-troops/ground-troops.component').then(
-            (m) => m.GroundTroopsComponent,
+          import('./components/digest-mechanical/digest-mechanical.component').then(
+            (m) => m.DigestMechanicalComponent,
           ),
       },
       {
@@ -139,5 +146,9 @@ export const routes: Routes = [
         (m) => m.ServicesPageComponent,
       ),
   },
-  { path: '**', redirectTo: '' },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./components/not-found/not-found.component').then((m) => m.NotFoundComponent),
+  },
 ];

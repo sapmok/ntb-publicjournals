@@ -23,11 +23,11 @@
         <div class="about-us-description-block">
           <app-photo-carousel
             [images]="[
-              'assets/images/kompas.webp',
-              'assets/images/kompas-1.webp',
               'assets/images/kompas-2.webp',
-              'assets/images/kompas-3.webp',
               'assets/images/kompas-4.webp',
+              'assets/images/kompas-3.webp',
+              'assets/images/kompas-5.webp',
+              'assets/images/kompas-1.webp',
             ]"
             [loop]="true"
             viewportHeight="420px"
@@ -101,19 +101,19 @@
           <div class="icon-wrapper">
             <app-svg-icon class="icon" [name]="'analytics-info'"></app-svg-icon>
           </div>
-          <h5 class="our-analitics-card-title">Аналитико-информационное</h5>
+          <h5 class="our-analitics-card-title">Аналитико-информационное обеспечение</h5>
           <p class="our-analitics-card-text education-text">
-            обеспечение процессов конверсии и проблем перехода оборонных предприятий на выпуск новой
+            процессов конверсии и проблем перехода оборонных предприятий на выпуск новой
             продукции.
           </p>
         </div>
         <div class="our-direction-card">
           <div class="icon-wrapper">
             <app-svg-icon class="icon" [name]="'info-analytics'"></app-svg-icon>
-          </div>
-          <h5 class="our-analitics-card-title">Информационно-аналитическое</h5>
+          </div>  <app-scroll-up />
+          <h5 class="our-analitics-card-title">Информационно-аналитическое обеспечение</h5>
           <p class="our-analitics-card-text education-text">
-            обеспечение исследований и разработок материалами из документо-графических и
+            исследований и разработок материалами из документо-графических и
             объекто-графических баз данных, справочно-информационного фонда.
           </p>
         </div>
@@ -121,7 +121,7 @@
           <div class="icon-wrapper">
             <app-svg-icon class="icon" [name]="'manual-books'"></app-svg-icon>
           </div>
-          <h5 class="our-analitics-card-title">Издание</h5>
+          <h5 class="our-analitics-card-title">Издание материалов</h5>
           <p class="our-analitics-card-text education-text">
             научно-технических журналов и сборников, информационных справочников и каталогов.
           </p>
@@ -130,7 +130,7 @@
           <div class="icon-wrapper">
             <app-svg-icon class="icon" [name]="'conference'"></app-svg-icon>
           </div>
-          <h5 class="our-analitics-card-title">Организация и проведение</h5>
+          <h5 class="our-analitics-card-title">Организация мероприятий</h5>
           <p class="our-analitics-card-text education-text">
             конференций, семинаров, выставок, деловых встреч.
           </p>
@@ -149,6 +149,7 @@
           <div class="contact-item-icon">
             <app-svg-icon class="phone-icon" [name]="'phone'"></app-svg-icon>
           </div>
+
           <div class="phone-numbers">
             <a class="phone-text" href="tel:+74954915797">+7 (495) 491-57-97 (приемная)</a>
             <a class="phone-text" href="tel:+74954914480">+7 (495) 491-44-80 (факс)</a>
@@ -160,7 +161,7 @@
             <app-svg-icon class="phone-icon" [name]="'email'"></app-svg-icon>
           </div>
           <div class="phone-numbers">
-              <a class="phone-text" href="mailto:secretariat@ntckompas.ru">secretariat@ntckompas.ru</a>
+            <a class="phone-text" href="mailto:secretariat@ntckompas.ru">secretariat@ntckompas.ru</a>
           </div>
         </div>
         <div class="contact-item">
@@ -173,8 +174,9 @@
           </div>
         </div>
       </div>
-      <img class="image-map" src="assets/images/map.webp" alt="карта">
+      <img class="image-map" src="assets/images/map.webp" alt="карта проезда">
       </div>
     </div>
   </div>
-  <app-scroll-up></app-scroll-up>
+<app-scroll-up />
+

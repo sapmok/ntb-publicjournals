@@ -49,7 +49,7 @@ export const MENU_DIGESTS_ICONS: MenuItemCard[] = [
     type: 'Дайджест',
     title: 'Машиностроение',
     routerLink: '/digests/ground-troops',
-    iconName: 'tank',
+    iconName: 'mechanical',
     disabled: true,
   },
   {
@@ -90,13 +90,21 @@ export const MENU_ANALITICS_JOURNALS_ICONS: MenuItemCard[] = [
   {
     id: 1,
     type: 'Аналитика',
+    title: 'Машиностроение',
+    routerLink: '/analytics/mechanical-analitics',
+    iconName: 'mechanical',
+    disabled: false,
+  },
+  {
+    id: 2,
+    type: 'Аналитика',
     title: 'Робототехника',
     routerLink: '/analytics/robotics-analitics',
     iconName: 'roboto',
     disabled: false,
   },
   {
-    id: 2,
+    id: 3,
     type: 'Аналитика',
     title: 'Искусственный интеллект',
     routerLink: '/analytics/artificial-intelligence',
@@ -104,7 +112,7 @@ export const MENU_ANALITICS_JOURNALS_ICONS: MenuItemCard[] = [
     disabled: false,
   },
   {
-    id: 3,
+    id: 4,
     type: 'Аналитика',
     title: 'Радиоэлектроника',
     routerLink: '/analytics/radio-electronics',
