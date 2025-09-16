@@ -34,12 +34,6 @@
   background-blend-mode: multiply;
 }
 
-@media (min-width: 1920px) {
-  .main-slider .slide {
-    background-position: 35% 70%;
-  }
-}
-
 @media (width <= 1536px) {
   .main-slider .slide {
     background-position: 110% 70%;
