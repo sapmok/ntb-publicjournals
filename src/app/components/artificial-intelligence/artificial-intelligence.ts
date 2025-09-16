@@ -23,5 +23,11 @@ export class ArtificialIntelligenceComponent {
       info: 'ИБ-ИИ-МЕДИЦИНА.pdf',
       sizeLabel: '617 КБ',
     },
+    {
+      title: 'ИИ на космических аппаратах - 2025 ',
+      file: 'АМ-ИИ-КА-2025.pdf',
+      info: 'АМ-ИИ-КА-2025.pdf',
+      sizeLabel: '1.2 МБ',
+    },
   ];
 }
