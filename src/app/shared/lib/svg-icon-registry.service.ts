@@ -1844,6 +1844,33 @@ export class SvgIconRegistryService {
     <path class="st2" d="M444.67,146c0-1.42-.92-2.04-2.82-2.04h-1.92v4.12h1.92c1.9,0,2.82-.65,2.82-2.08Z"/>
   </g>
 </svg>`;
+      case 'expand':
+        return `
+	<svg width="20" height="20" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M15.5 12.5L26 2" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M12 17L1.5 27.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M15.5 17L26 27.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M12 12.5L1.5 2" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M19 1.5H26.5V9" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M8.5 28L1 28L1 20.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M26.5 20.5L26.5 28L19 28" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M1 9L1 1.5L8.5 1.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	</svg>
+`;
+      case 'collapse':
+        return `
+	<svg width="20" height="20" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M26.5 1.5L16 12" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M0.999998 28L11.5 17.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M26.5 28L16 17.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M1 1.5L11.5 12" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M23 12.5L15.5 12.5L15.5 5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M4.5 17L12 17L12 24.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M15.5 24.5L15.5 17L23 17" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	<path d="M12 5L12 12.5L4.5 12.5" stroke="black" stroke-width="1.3" stroke-linecap="round"/>
+	</svg>
+
+`;
       default:
         return '';
     }

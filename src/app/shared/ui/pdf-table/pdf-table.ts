@@ -40,6 +40,7 @@ interface PdfRow {
 })
 export class PdfTableComponent implements AfterViewInit {
   private readonly sanitizer = inject(DomSanitizer);
+  isWide = false;
 
   @Input() set items(value: PdfItem[] | null) {
     const list = value ?? [];
@@ -68,6 +69,10 @@ export class PdfTableComponent implements AfterViewInit {
     if (!('showModal' in dlg)) {
       dialogPolyfill.registerDialog(dlg);
     }
+  }
+
+  public toggleWide(): void {
+    this.isWide = !this.isWide;
   }
 
   public trackByIdx(_: number, r: PdfRow): number {

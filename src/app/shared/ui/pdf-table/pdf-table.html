@@ -51,6 +51,7 @@
 <dialog
   #previewDialog
   class="preview"
+  [class.wide]="isWide"
   role="dialog"
   aria-modal="true"
   tabindex="0"
@@ -59,11 +60,19 @@
   (keydown.space)="onDialogBackdropKey()"
   (cancel)="onDialogCancel($event)"
 >
-  <header>
+  <header class="dialog-header">
     <div class="title">{{ selected?.title }}</div>
-    <button type="button" class="icon-btn-close" (click)="closePreview()">
-      <app-svg-icon [name]="'close'"></app-svg-icon>
-    </button>
+      <button
+        type="button"
+        class="icon-btn"
+        (click)="toggleWide()"
+        [title]="isWide ? 'Свернуть' : 'Развернуть '"
+      >
+        <app-svg-icon class="icon" [name]="isWide ? 'collapse' : 'expand'"></app-svg-icon>
+      </button>
+      <button type="button" title="закрыть" class="icon-btn-close" (click)="closePreview()">
+        <app-svg-icon [name]="'close'"></app-svg-icon>
+      </button>
   </header>
 
   @if (selected) {
